@@ -1,0 +1,61 @@
+.hero-section{
+    .hero-content{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        h1 {
+            color: #fff;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        a.box-btn{
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+            background-color: $red;
+            padding: 10px 20px;
+            text-transform: capitalize;
+            border-radius: 20px;
+            transition: .5s;
+            margin-bottom: 140px;
+            &:hover{
+            letter-spacing: 2px;
+            }
+        }
+    }
+    .single-cours-box {
+        background: #fff;
+        padding: 20px 70px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        h3 {
+            font-size: 30px;
+            text-transform: capitalize;
+            padding-top: 18px;
+            color: $red;
+        }
+        i {
+            background:$red;
+            padding: 20px;
+            border-radius: 50%;
+            font-size: 25px;
+            color: #fff;
+        }
+    }
+}
+
+
+/*.bg::before {
+    position: absolute;
+    left: 50%;
+    bottom: -25rem;
+    top: 0;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 100%;
+    background: #333;
+    content: "";
+    opacity: .9;
+    z-index: -1;
+    border-radius: 50%;
+}*/

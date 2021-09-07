@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+}
+.section-padding{
+    padding: 70px 0;
+}
+h1, h2, h3, h4, h5{
+    font-family: 'Roboto', sans-serif;
+    span{
+        font-family: 'Roboto', sans-serif; 
+    }
+}
+h1{
+    font-family: 'Lobster', cursive;
+    letter-spacing: 3;
+    span{
+        font-family: 'Roboto', sans-serif; 
+    }
+}
+input, textarea:focus{
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+.bg{
+    position: relative;
+    z-index: 1;
+    &::before{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: #333;
+        content: "";
+        opacity: .9;
+        z-index: -1;
+    }
+}
+button.navbar-toggler {
+    position: fixed;
+    right: 40px;
+    top: 20px;
+}
+
+@mixin box-btn {
+     display: inline-block;
+        color: #fff;
+        text-decoration: none;
+        background-color: $red;
+        padding: 10px 20px;
+        text-transform: capitalize;
+        border-radius: 20px;
+        transition: .5s;
+        &:hover{
+            letter-spacing: 2px;
+            }
+    }
+

@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: 'Roboto', sans-serif;
+}
+
+.section-padding {
+  padding: 70px 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 span, h2 span, h3 span, h4 span, h5 span {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  letter-spacing: 3;
+}
+
+h1 span {
+  font-family: 'Roboto', sans-serif;
+}
+
+input, textarea:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bg {
+  position: relative;
+  z-index: 1;
+}
+
+.bg::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #333;
+  content: "";
+  opacity: .9;
+  z-index: -1;
+}
+
+button.navbar-toggler {
+  position: fixed;
+  right: 40px;
+  top: 20px;
+}
+
+.section-title h2 {
+  font-size: 35px;
+  color: #ff4757;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.section-title p {
+  font-size: 20px;
+  color: #ff4757;
+  text-transform: capitalize;
+}
+
+.header-area {
+  background-color: #333;
+  opacity: .67;
+  padding: 15px 0;
+}
+
+.header-area .logo a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  border: 2px solid #eee;
+  padding: 4px;
+  display: inline-block;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.header-area .main-manu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header-area .main-manu ul li {
+  display: inline-block;
+}
+
+.header-area .main-manu ul li a {
+  padding: 10px 20px;
+  display: block;
+  text-transform: capitalize;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+}
+
+.header-area .main-manu ul li a:hover {
+  color: #333;
+  background: #eee;
+}
+
+.hero-section .hero-content {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.hero-section .hero-content h1 {
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.hero-section .hero-content a.box-btn {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  background-color: #ff4757;
+  padding: 10px 20px;
+  text-transform: capitalize;
+  border-radius: 20px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  margin-bottom: 140px;
+}
+
+.hero-section .hero-content a.box-btn:hover {
+  letter-spacing: 2px;
+}
+
+.hero-section .single-cours-box {
+  background: #fff;
+  padding: 20px 70px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.hero-section .single-cours-box h3 {
+  font-size: 30px;
+  text-transform: capitalize;
+  padding-top: 18px;
+  color: #ff4757;
+}
+
+.hero-section .single-cours-box i {
+  background: #ff4757;
+  padding: 20px;
+  border-radius: 50%;
+  font-size: 25px;
+  color: #fff;
+}
+
+/*.bg::before {
+    position: absolute;
+    left: 50%;
+    bottom: -25rem;
+    top: 0;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 100%;
+    background: #333;
+    content: "";
+    opacity: .9;
+    z-index: -1;
+    border-radius: 50%;
+}*/
+.about-area .about-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.about-area .about-content h2 {
+  font-size: 40px;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #ff4757;
+}
+
+.about-area .about-content p {
+  font-size: medium;
+}
+
+.about-area .about-content a.box-btn {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  background-color: #ff4757;
+  padding: 10px 20px;
+  text-transform: capitalize;
+  border-radius: 20px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.about-area .about-content a.box-btn:hover {
+  letter-spacing: 2px;
+}
+
+.team-section {
+  background-color: #ced6e0;
+}
+
+.team-section .single-teacher-box {
+  background: #fff;
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.team-section .single-teacher-box:hover img {
+  opacity: 1;
+}
+
+.team-section .single-teacher-box img {
+  width: 100%;
+  height: 250px;
+  opacity: .6;
+}
+
+.team-section .single-teacher-box .box-content h4 {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.6;
+  padding-top: 15px;
+  text-transform: capitalize;
+  color: #ff4757;
+}
+
+.team-section .single-teacher-box .box-content h4 span {
+  font-size: 18px;
+  display: block;
+  text-transform: capitalize;
+  color: #eee;
+}
+
+.team-section .single-teacher-box .box-content .icon-box a i {
+  font-size: 18px;
+  padding: 5px 8px;
+  color: #ff4757;
+}
+
+.course-area {
+  background: #eee;
+  text-align: center;
+}
+
+.course-area .section-title {
+  padding-bottom: 45px;
+}
+
+.course-area .skill-box {
+  background: #fff;
+  padding: 20px;
+  position: relative;
+  border-radius: 15px;
+  -webkit-box-shadow: 4px 4px red;
+          box-shadow: 4px 4px red;
+  margin-bottom: 60px;
+}
+
+.course-area .skill-box a {
+  border: 8px solid #ff4757;
+  display: inline-block;
+  border-radius: 50%;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: -5px;
+}
+
+.course-area .skill-box a i {
+  font-size: 40px;
+  color: #fff;
+  background: #ff4757;
+  padding: 10px;
+  border-radius: 50%;
+  margin: 5px;
+  border: 5px solid #ff4757;
+}
+
+.course-area .skill-box .skill-content h5 {
+  color: burlywood;
+  padding-top: 25px;
+}
+
+.course-area .student-box {
+  background: #fff;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.course-area .student-box img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 4px solid;
+  border-top-color: #ff4757;
+  border-left-color: #ff4757;
+  padding: 4px;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.course-area .student-box .student-content {
+  padding: 60px 10px 10px 10px;
+}
+
+.course-area .student-box .icon-box a i {
+  font-size: 25px;
+  color: #57606f;
+  padding: 15px 1px;
+}
+
+.contact-section {
+  background-color: #2f3542;
+  opacity: .8;
+}
+
+.contact-section .contact img {
+  height: 70%;
+  width: 100%;
+}
+
+.contact-section .contact-side form input, .contact-section .contact-side form textarea {
+  display: block;
+  width: 100%;
+  margin: 10px;
+  border: 2px solid #eee;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.contact-section .contact-side form input[type="submit"] {
+  background-color: #ff4757;
+  border: 0;
+  display: inline-block;
+  width: 20%;
+}
+
+.footer-area {
+  padding: 40px 0;
+  background: #ced6e0;
+}
+
+.footer-area .icon a i {
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 50%;
+  color: #9e4c5a;
+  border: 1px solid #9e4c5a;
+}
+
+.footer-area .icon a i:hover {
+  background-color: #ff4757;
+}
+
+.footer-area p {
+  font-size: 17px;
+  text-transform: capitalize;
+  padding: 15px 0;
+  margin-top: 15px;
+  border-top: 2px solid #ff4757;
+}
+
+.footer-area p a {
+  color: #ff4757;
+}
+/*# sourceMappingURL=style.css.map */

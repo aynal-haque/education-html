@@ -1,0 +1,29 @@
+.footer-area {
+    padding: 40px 0;
+    background: $bg-color-section-2;
+    .icon{
+        a{
+            i{
+            font-size: 25px;
+            padding: 10px;
+            border-radius: 50%;
+            color: rgb(158, 76, 90);
+            border: 1px solid rgb(158, 76, 90);
+            &:hover{
+                background-color: $red;
+            }
+            }
+        }
+    }
+    p{
+        font-size: 17px;
+        text-transform: capitalize;
+        padding: 15px 0;
+        margin-top: 15px;
+        border-top: 2px solid $red;
+        a{
+            color: $red;
+        }
+    }
+   
+}
